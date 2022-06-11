@@ -9,7 +9,8 @@ class TestCHK(unittest.TestCase):
         assert checkout_solution.checkout('AAABC') == 180
         assert checkout_solution.checkout('AXA') == -1
         assert checkout_solution.checkout('ABBBB') == 140
-        assert checkout_solution.checkout('BBB') == 75
+        assert checkout_solution.checkout('AAAA') == 180
 
         assert checkout_solution.checkout('ABBEE') == 160
+
 
