@@ -17,5 +17,6 @@ def checkout(skus):
     for i in items:
         for y in range (0, len(skus)):
             if i == skus[y]:
-                total += i['price']
+                total += items[i]
     return total
+
