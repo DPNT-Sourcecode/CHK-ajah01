@@ -11,6 +11,7 @@ def checkout(skus):
     total = 0
     countA = 0
     countB = 0
+
     if len(skus) == 0:
         return -1
 
@@ -29,5 +30,6 @@ def checkout(skus):
                     total -= 15
                     countB = 0
     return total
+
 
 
