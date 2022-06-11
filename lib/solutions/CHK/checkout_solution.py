@@ -19,9 +19,3 @@ def checkout(skus):
                 if skus[y] == '3A':
                     total -= 20
     return total
-
-
-
-
-
-
