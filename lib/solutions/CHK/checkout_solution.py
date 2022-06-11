@@ -1,5 +1,3 @@
-
-
 # noinspection PyUnusedLocal
 # skus = unicode string
 items = {'A': 50,
@@ -14,11 +12,12 @@ def checkout(skus):
     if len(skus) == 0:
         return -1
 
-    for i in items.items():
+    for key, val in items.items():
         for y in range(0, len(skus)):
-            if i == skus[y]:
-                total += items[i]
+            if key == skus[y]:
+                total += val
     return total
+
 
 
 
