@@ -9,13 +9,18 @@ items = {'A': 50,
 
 def checkout(skus):
     total = 0
+    countA = 0
+
     if len(skus) == 0:
         return -1
 
     for key, val in items.items():
         for y in range(0, len(skus)):
             if key == skus[y]:
+                if key == 'A':
+                    countA += 1
                 total += val
-                if skus[y] == '3A':
+                if countA == 3:
                     total -= 20
     return total
+
