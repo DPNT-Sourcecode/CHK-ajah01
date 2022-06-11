@@ -34,5 +34,3 @@ def checkout(skus):
             total = -1
             break
     return total
-
-
