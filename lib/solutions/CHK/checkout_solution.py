@@ -4,6 +4,7 @@ items = {'A': 50,
          'B': 30,
          'C': 20,
          'D': 15,
+         'E': 40,
          }
 
 
@@ -33,8 +34,13 @@ def checkout(skus):
                     if countB == 2:
                         total -= 15
                         countB = 0
+                    if countE == 2:
+                        if countB > 1 and countB != 2:
+                            total -= 30
+                        if countB == 2:
+                            total = total
+                            countB = 0
         else:
             total = -1
             break
     return total
-
