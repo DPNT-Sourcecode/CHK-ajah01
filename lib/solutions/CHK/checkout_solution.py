@@ -15,19 +15,21 @@ def checkout(skus):
     if len(skus) == 0:
         return 0
 
-
-    for key, val in items.items():
-        for y in range(0, len(skus)):
-            if key == skus[y] :
-                if key == 'A':
-                    countA += 1
-                if key == 'B':
-                    countB += 1
-                total += val
-                if countA == 3:
-                    total -= 20
-                    countA = 0
-                if countB == 2:
-                    total -= 15
-                    countB = 0
+    for y in range(0, len(skus)):
+        if skus[y] in items:
+            for key, val in items.items():
+                if key == skus[y]:
+                    if key == 'A':
+                        countA += 1
+                    if key == 'B':
+                        countB += 1
+                    total += val
+                    if countA == 3:
+                        total -= 20
+                        countA = 0
+                    if countB == 2:
+                        total -= 15
+                        countB = 0
+        else: total = -1
     return total
+
