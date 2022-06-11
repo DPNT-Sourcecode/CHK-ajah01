@@ -18,7 +18,7 @@ def checkout(skus):
 
     for key, val in items.items():
         for y in range(0, len(skus)):
-            if key == skus[y]:
+            if key == skus[y] :
                 if key == 'A':
                     countA += 1
                 if key == 'B':
@@ -31,10 +31,3 @@ def checkout(skus):
                     total -= 15
                     countB = 0
     return total
-
-
-
-
-
-
-
