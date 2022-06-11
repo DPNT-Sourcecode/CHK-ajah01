@@ -11,4 +11,5 @@ class TestCHK(unittest.TestCase):
         assert checkout_solution.checkout('ABBBB') == 140
         assert checkout_solution.checkout('AAAA') == 180
 
-        assert checkout_solution.checkout('ABEE') == 90
+        assert checkout_solution.checkout('ABEE') == 130
+
