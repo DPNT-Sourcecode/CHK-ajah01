@@ -2,10 +2,10 @@
 
 # noinspection PyUnusedLocal
 # skus = unicode string
-items = {'A': {'price': 50},
-         'B': {'price': 30},
-         'C': {'price': 20},
-         'D': {'price': 15},
+items = {'A': 50,
+         'B': 30,
+         'C': 20,
+         'D': 15,
          }
 
 
@@ -14,11 +14,12 @@ def checkout(skus):
     if len(skus) == 0:
         return -1
 
-    for i in items:
+    for i in items.items():
         for y in range(0, len(skus)):
             if i == skus[y]:
                 total += items[i]
     return total
+
 
 
 
