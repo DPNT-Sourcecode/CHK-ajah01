@@ -7,7 +7,7 @@ items = {'A': {'price': 50},
          'C': {'price': 20},
          'D': {'price': 15},
          }
-
+price = items.values()
 
 def checkout(skus):
     total = 0
@@ -19,4 +19,5 @@ def checkout(skus):
             if i == skus[y]:
                 total += items[i]
     return total
+
 

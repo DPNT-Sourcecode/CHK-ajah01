@@ -3,5 +3,6 @@ import unittest
 
 
 class TestCHK(unittest.TestCase):
-    def test_sum(self):
+    def test_checkout(self):
         assert checkout_solution.checkout('AB') == 80
+
