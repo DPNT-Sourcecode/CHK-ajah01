@@ -10,7 +10,7 @@ items = {'A': 50,
 def checkout(skus):
     total = 0
     countA = 0
-
+    countB = 0
     if len(skus) == 0:
         return -1
 
@@ -19,8 +19,15 @@ def checkout(skus):
             if key == skus[y]:
                 if key == 'A':
                     countA += 1
+                if key == 'B':
+                    countB += 1
                 total += val
                 if countA == 3:
                     total -= 20
+                    countA = 0
+                if countB == 2:
+                    total -= 15
+                    countB = 0
     return total
+
 
