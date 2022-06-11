@@ -12,11 +12,12 @@ items = {'A': {'price': 50},
 def checkout(skus):
     total = 0
     for i in items:
-        for y in range (0, skus:
-            if i == y:
-
+        for y in range (0, len(skus)):
+            if i == skus[y]:
+                
         total += i
     return total
+
 
 
 
