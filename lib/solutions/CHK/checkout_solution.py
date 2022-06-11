@@ -34,9 +34,7 @@ def checkout(skus):
                     if countE == 2:
                         if countB > 1 and countB != 2:
                             total -= 30
-                        if countB == 2:
-                            total -= 15
-                    countE = 0
+                        countE = 0
                     if countB == 2:
                         total -= 15
                         countB = 0
@@ -44,4 +42,5 @@ def checkout(skus):
             total = -1
             break
     return total
+
 
