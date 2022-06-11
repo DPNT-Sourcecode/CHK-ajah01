@@ -13,7 +13,7 @@ def checkout(skus):
     countB = 0
 
     if len(skus) == 0:
-        return -1
+        return 0
 
     for key, val in items.items():
         for y in range(0, len(skus)):
@@ -30,6 +30,7 @@ def checkout(skus):
                     total -= 15
                     countB = 0
     return total
+
 
 
 
