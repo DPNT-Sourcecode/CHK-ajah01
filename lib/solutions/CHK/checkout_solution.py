@@ -28,19 +28,18 @@ def checkout(skus):
                     if key == 'E':
                         countE += 1
                     total += val
-                    if countA == 3:
-                        total -= 20
-                        countA = 0
-                    if countB >= 1:
-                        if countE == 2:
-                            total -= 30
-                        if countB % 2 == 0:
-                            total -= (15 * countB/2)
-                            if countE == 2:
-                                total -= 30
-                            countE = 0
-
         else:
             total = -1
             break
+    if countA % 3 == 0:
+        total -= 20 * (countA/3)
+    if countB >= 1:
+        if countE == 2:
+            total -= 30
+        if countB % 2 == 0:
+            total -= (15 * countB/2)
+            if countE == 2:
+                total -= 30
+
     return total
+
