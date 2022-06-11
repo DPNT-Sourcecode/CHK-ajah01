@@ -11,6 +11,7 @@ def checkout(skus):
     total = 0
     countA = 0
     countB = 0
+    countE = 0
 
     if len(skus) == 0:
         return 0
@@ -23,6 +24,8 @@ def checkout(skus):
                         countA += 1
                     if key == 'B':
                         countB += 1
+                    if key == 'E':
+                        countE += 1
                     total += val
                     if countA == 3:
                         total -= 20
@@ -34,3 +37,4 @@ def checkout(skus):
             total = -1
             break
     return total
+
