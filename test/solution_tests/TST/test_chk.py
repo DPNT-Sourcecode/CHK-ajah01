@@ -4,6 +4,7 @@ import unittest
 
 class TestCHK(unittest.TestCase):
     def test_checkout(self):
-        assert checkout_solution.checkout('') == -1
+        assert checkout_solution.checkout('AAA') == 150
+
 
 
