@@ -37,7 +37,9 @@ def checkout(skus):
     else: total -= 20 * (countA // 3)
 
     if countB % 2 == 0:
-        total -= 15 * (countB/2)
+        if countE < 2:
+            total -= 15 * (countB/2)
+        else: total = total
     else: total -= 15 * (countB // 2)
 
     if countE % 2 == 0:
@@ -45,6 +47,7 @@ def checkout(skus):
             total -= 30 * (countE/2)
 
     return total
+
 
 
 
