@@ -3,4 +3,12 @@
 # noinspection PyUnusedLocal
 # skus = unicode string
 def checkout(skus):
-    raise NotImplementedError()
+    total = 0
+    items = { 'A' : { 'price': 50 },
+               
+
+    }
+    for i in skus:
+        total += i
+    return total
+
