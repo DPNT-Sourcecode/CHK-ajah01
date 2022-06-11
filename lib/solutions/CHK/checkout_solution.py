@@ -16,7 +16,10 @@ def checkout(skus):
         for y in range(0, len(skus)):
             if key == skus[y]:
                 total += val
+                if skus[y] == '3A':
+                    total -= 20
     return total
+
 
 
 
